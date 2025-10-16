@@ -12,6 +12,7 @@ output "connection_string" {
 
 output "instrumentation_key" {
   description = "Instrumentation Key of the Application Insights"
+  sensitive   = true
   value       = azurerm_application_insights.this.instrumentation_key
 }
 
